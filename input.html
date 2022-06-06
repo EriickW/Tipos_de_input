@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form id="meu-form">
+        <!-- O fildset serve para juntar inputs com a mesma finalidade ou agrupar items em um formulario com a msma finalidade -->
+        <fieldset>
+
+        <!-- O legend serve para dar nome ao formulario -->
+        <legend>Fruit juice size</legend>
+        <p>
+
+            <!-- o input são um meio de entrada de dados  -->
+          <input type="radio" name="size" id="size_1" value="small" />
+
+            <!-- O label é uma forma de nomear o input-->
+          <label for="size_1">Small</label>
+        </p>
+        <p>
+          <input type="radio" name="size" id="size_2" value="medium" />
+          <label for="size_2">Medium</label>
+        </p>
+        <p>
+          <input type="radio" name="size" id="size_3" value="large" />
+          <label for="size_3">Large</label>
+        </p>
+        <p>
+            <input type="email" autocomplete="email">
+            <!-- O autocompleate faz com que dependendo do texto ou no caso email mais usado no navegador quando estiver sendo digitado ele vai completar -->
+        </p>
+        <p>
+            <input type="type" autofocus> 
+            <!-- Essa função de autofocus faz com que quando entrar na pagina o cursor vai ficar nesse input essa função é do tipo boolean ou seja recebe verdadeiro ou falso e nao recebe atributos manualmente-->
+        </p>
+        <p>
+            <input type="type" disabled>
+            <!-- Tambem é um comando do tipo boolean ele serve para disabilitar o input fazendo com que ele nao receba dados-->
+        </p>
+        <p>
+            <input type="type" value="Qualquer">
+            <!-- O tipo value serve para dar um valor inicial ao input -->
+        </p>
+        <p>
+            <input type="type" value="texto" readonly>
+            <!-- O comando readonly é outro tipo boolean que funciona da mesma forma que o disable mas o aspecto dele muda -->
+        </p>
+        <p>
+            <!-- required (Quase todos os atributos aceitam esse), esse comando faz com que quando o formulario for enviado esse dado nesse input deve estar preenchido senão ele nao envia ou seja ele é obrigatorio para o evvio-->
+            <input type="text" required>
+        </p>
+        <p>
+            <!-- Comando placeholder(usado em password, search, tel, text, url) -->
+            <input type="password" placeholder="Digite sua senha">
+        </p>
+        <p>
+            <input type="email" placeholder="Digite seu email">
+        </p>
+      </fieldset>
+    </form>
+
+    <!-- Essa é uma forma de colocar inputs fora dos formulários indiccando o formulario que ele pertence usando o "form" e indicndo o nome dele  -->
+
+    <!-- O label pode indicar tbm o nome de um input basta dar um id aou imput e mostrar ao label usando o for para mostar onde vai ser indicado -->
+    <label for="email">Email</label>
+    <input type="email" name="Email" id="email" form="meu-form">
+    
+
+</body>
+</html>

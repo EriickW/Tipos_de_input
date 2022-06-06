@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+</head>
+<body>
+    <!-- 
+
+        <input type="email"/>
+
+        - Espera que o usuário digite um email
+        - Irá validar se o valor digitado é um email
+
+        #Atributos
+
+        - placeholder
+        - readonly / disabled
+        - value
+
+        - required
+
+        - multiple 
+            * O campo irá receber 1 ou mais emails, separando por virgulas 
+        
+            - min lenght / maxlength
+                * O mínimo e/ou máximo valor que o campo irá conter
+
+            - pattern
+                * Uso de expressão regular para validar o campo
+                * Exemplo: o usuário só podera colocar email do domínio rocketseat.com.br
+                * pattern+".+@rocketseat\.com\.br"
+            
+            - list 
+                * O id de uma tag <datalist>que esta no masmo documento
+                * <datalist> irá conter uma lista de valores pré definidos a fim de suguerir ao usuário, quais valores estão disponíveis
+                    * Os valores do <datalist> que não forem compatíveis com o campo, não serão apresentados como sugestão
+                
+
+     -->
+
+     <form action="">
+         <datalist id="emails">
+             <option>erickwillian223@gmail.com</option>
+         </datalist>
+         <input type="email"
+         list="emails"
+         >
+         <button type="submit">Enviar</button>
+     </form>
+</body>
+</html>
